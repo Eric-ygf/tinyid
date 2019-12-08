@@ -77,6 +77,9 @@
             <properties>
                 <package.environment>online</package.environment>
             </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
         </profile>
         <profile>
             <id>offline</id>

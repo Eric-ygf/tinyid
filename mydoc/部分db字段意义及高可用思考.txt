@@ -1,0 +1,6 @@
+`tiny_id_info`.`step`  `max_id`扩大的幅度（id消耗到一定程度，max_id会进行一次扩大）
+`tiny_id_info`.`remainder`  单db，记住remainder=0就好
+
+感觉没有必要引入双db，单db挂了重启就好，web服务要做高可用，db重启之后依次重启之，mp做一个自定义的id generator，每次获取id不是只调一次接口，而是重试5次
+再加上可以通过gateway-eureka的方式、ribbon轮询等方式访问，高可用的保障还是有的
+

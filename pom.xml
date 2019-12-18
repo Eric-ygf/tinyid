@@ -41,7 +41,7 @@
 
     <modules>
         <module>tinyid-server</module>
-        <module>tinyid-client</module>
+<!--        <module>tinyid-client</module>-->
         <module>tinyid-base</module>
     </modules>
 

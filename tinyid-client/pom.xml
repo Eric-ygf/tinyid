@@ -40,4 +40,16 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>xxzx</name>
+			<url>http://192.168.25.239:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>xxxx</name>
+			<url>http://192.168.25.239:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
